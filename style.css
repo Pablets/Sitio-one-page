@@ -1,17 +1,12 @@
-.swiper-slide {
-    width: 50%;
-}
-
 .swiper-wrapper {
-    width: 300px;
-}
-
-.swiper-container {
+    width: 80vw;
     overflow: visible;
 }
 
-.swiper-pagination {
-    position: static;
+.swiper-container {
+    width: 100vw;
+    overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 * {
@@ -38,7 +33,7 @@ header {
 }
 
 header, main, footer {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 header h1, header h2 {
@@ -64,7 +59,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px 0px;
 }
 
 /* Article -------------- */
@@ -73,6 +68,7 @@ article {
     background-color: gainsboro;
     border-radius: 5px;
     padding: 20px;
+    overflow: hidden;
 }
 
 article h1, article p {
@@ -108,18 +104,6 @@ form [name='name'], [name='email'] {
     background: white;
 }
 
-/* input#privacidad {
-    background: red;
-    width: 20px;
-    color: teal;
-    border-radius: 30px;
-    margin-right: 10px;
-    font-size: 20px;
-} */
-
-/* .check-container>* {
-    display: inline-block;
-} */
 
 /* stile del check -------------------------*/
 
