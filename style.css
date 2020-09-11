@@ -55,10 +55,12 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: bisque;
+    padding: 0px 20px;
 }
 
 header h1, header h2 {
     text-align: left;
+    margin-bottom: 1rem;
 }
 
 header h1 {
@@ -94,6 +96,10 @@ article {
 
 article h1, article p {
     padding-bottom: 1em;
+}
+
+article p:last-child{
+    background-color: cadetblue;
 }
 
 article a {
