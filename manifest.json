@@ -1,0 +1,13 @@
+{
+    "short_name": "Trekk Team app",
+    "name": "Página del team de trekking trekkteam",
+    "icons": [
+      {
+        "src": "/imagenes/logo.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen"
+  }
