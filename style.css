@@ -32,10 +32,6 @@ header {
     background-color: bisque;
 }
 
-header, main, footer {
-    /* padding: 10px; */
-}
-
 header h1, header h2 {
     text-align: left;
 }
@@ -75,9 +71,13 @@ article h1, article p {
     padding-bottom: 1em;
 }
 
-article button {
+article a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
     border: none;
     padding: 0.5rem;
+    line-height: 0.5rem;
     background-color: ghostwhite;
 }
 
@@ -103,6 +103,22 @@ form [name='name'], [name='email'] {
     width: 100%;
     background: white;
 }
+
+.check-text{
+    padding-left: 10px;
+}
+.check-text a{
+    text-decoration: none;
+}
+
+.container-privacidad{
+    display: flex;
+}
+
+/* .container-privacidad>*{
+    display: flex;
+    border: 1px solid red;
+} */
 
 
 /* stile del check -------------------------*/
@@ -229,6 +245,48 @@ form [name='name'], [name='email'] {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 24px;
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+    /* grid-gap: 24px; */
   }
+
+  /* Modal ------------------- */
+
+#modal1, #modal2, #modal3, #modal4, #modal5, #modal6{
+    display: none;
+}
+
+#modal1:target,#modal2:target{
+    background-color: cadetblue;
+    display: block;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+article.modal{
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+}
+
+article.modal div.container{
+    position: relative;
+    background-color: gainsboro;
+    padding: 20px;
+    overflow: auto;
+}
+
+div.container a{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    line-height: 1rem;
+    font-weight: 700;
+}
