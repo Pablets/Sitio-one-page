@@ -7,7 +7,9 @@
 .swiper-container{
     overflow: visible;
 }
-
+.swiper-pagination{
+    position: static;
+}
 
 *{
     margin: 0px;
