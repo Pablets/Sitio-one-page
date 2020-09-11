@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link
-    href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-    rel="stylesheet" />
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -63,9 +63,12 @@
         <form action="" id="form">
             <input type="text" name="name" id="name" placeholder="Nombre" value="Name">
             <input type="email" name="email" id="email" placeholder="Email" value="Email">
-            <div class="check-container">
-                <input type="checkbox" name="privacidad" id="privacidad" value="Check">
-                <label for="privacidad">
+            <div class="check-container grid">
+                    <label class="checkbox bounce" for="privacidad">
+                        <input type="checkbox" id="privacidad">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
                     <p>Acepto la <a href="#">Política de privacidad</a></p>
                 </label>
             </div>
@@ -73,20 +76,21 @@
         </form>
         <span>Copyright</span>
     </footer>
+
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      initialSlide: 1,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        initialSlide: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
-  </script>
+</script>
 
 </html>
