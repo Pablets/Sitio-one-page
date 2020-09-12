@@ -72,7 +72,6 @@
     overflow: hidden;
     padding: 2rem 0px;
     margin-top: 2rem;
-    border: solid red 1px;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -464,8 +463,24 @@ article.modal div.container {
     background-color: gainsboro;
     padding: 20px;
     overflow: auto;
-    height: 90vh;
+    height: 75vh;
     width: 95vw;
+}
+
+article.modal div.container h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding-bottom: 0.3rem;
+}
+
+article.modal div.container h2{
+    text-align: center;
+    font-size: 1rem;
+    font-variant: normal;
+    font-weight: normal;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.2rem;
 }
 
 a.x-button {
