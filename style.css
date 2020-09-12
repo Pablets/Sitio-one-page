@@ -413,23 +413,4 @@ article.modal img {
     max-width: calc(100vw - 60px);
 }
 
-article.video-container {
-    background: #272727;
-    background-image: linear-gradient(bottom, #272727 7%, #333333 100%);
-    box-shadow: 2px 2px 3px #888;
-}
 
-article.video-container>iframe {
-    border: none;
-    box-shadow: 2px 2px 3px #333333;
-}
-
-/* section.fullwidth {
-    width: 100%;
-    padding: 0px 0px 20px 0px;
-} */
-
-section.fullwidth article {
-    /* padding: 20px; */
-    background-color: coral;
-}
