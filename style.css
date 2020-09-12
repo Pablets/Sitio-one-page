@@ -70,7 +70,9 @@
 .swiper-container {
     width: 100vw;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding: 2rem 0px;
+    margin-top: 2rem;
+    border: solid red 1px;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -189,7 +191,7 @@ section {
 
 article {
     background-color: gainsboro;
-    border-radius: 5px;
+    border-radius: 8px;
 
 }
 
@@ -201,6 +203,7 @@ article>div.miniature-container{
 }
 
 article img.miniature{
+    border-radius: 8px;
     display: block;
     width: 100%;
     height: auto;
@@ -208,7 +211,7 @@ article img.miniature{
 }
 
 article.swiper-slide{
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
 }
 
