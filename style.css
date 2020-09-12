@@ -74,15 +74,15 @@
     /* border: 1px solid red; */
 }
 
-/* .swiper-slide.swiper-slide-active {
+.swiper-slide.swiper-slide-active {
     opacity: 1;
-    transition: all 1s;
+    background-color:gainsboro;
 }
 
-.swiper-slide {
+.swiper-slide.swiper-slide-next, .swiper-slide.swiper-slide-prev {
+    background-color:gray;
     opacity: 0.7;
-    transition: all 1s;
-} */
+}
 
 * {
     margin: 0px;
@@ -128,23 +128,47 @@ header {
     height: 100vmin;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: bisque;
-    padding: 0px 20px;
-    margin-bottom: 20px;
+    /* justify-content: center; */
+    background-image: url(/imagenes/hermomobile4.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+    padding: 2rem 20px;
+    margin-bottom: 2rem;
 }
 
 header h1, header h2 {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 header h1 {
+    font-family: 'work sans';
+    font-weight: 500;
     font-size: 2.5rem;
+    width: 200px;
+    /* text-align: center; */
 }
 
 header h2 {
+    font-family: 'work sans';
+    font-weight: 300;
+    width: 200px;
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    /* text-align: center; */
+}
+
+header a{
+    font-family: 'work sans';
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #ff8400;
+    color: rgb(255, 255, 255);
+
 }
 
 p {
@@ -158,7 +182,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 2rem 0rem;
 
 }
 
@@ -413,4 +437,6 @@ article.modal img {
     max-width: calc(100vw - 60px);
 }
 
-
+article.transparent-card{
+    background-color: transparent;
+}
