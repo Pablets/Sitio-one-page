@@ -65,13 +65,12 @@
 /* Swiper ------------------------- */
 .swiper-wrapper {
     width: 80vw;
-    overflow: visible;
 }
 
 .swiper-container {
     width: 100vw;
     overflow: hidden;
-    /* border: 1px solid red; */
+    padding-bottom: 10px;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -128,7 +127,7 @@ header {
     height: 100vmin;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     background-image: url(/imagenes/hermomobile4.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -191,22 +190,70 @@ section {
 article {
     background-color: gainsboro;
     border-radius: 5px;
-    padding: 20px;
+
+}
+
+article>div.miniature-container{
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+article img.miniature{
+    display: block;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
-article h1, article p, img {
-    padding-bottom: 1em;
+article.swiper-slide{
+    box-shadow: 1px 1px 5px black;
+
 }
 
-article a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    border: none;
-    padding: 0.5rem;
-    line-height: 0.5rem;
-    background-color: ghostwhite;
+article.swiper-slide .container{
+    padding: 0rem 1rem;
+
+}
+article>div.miniature-container>div{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    margin-left: 1rem;
+}
+article>div.miniature-container h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 5px black;
+}
+article>div.miniature-container h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px black;
+    margin-bottom: 1rem;
+}
+
+article h1, article p, img{
+    margin-bottom: 0.8rem;
+}
+
+article div.cinta-opciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+article .cinta-opciones button{
+    padding: 0.2rem;
+}
+
+article .cinta-opciones span{
+    color: blue;
+    padding: 0px 0 0 1rem;
 }
 
 footer {
@@ -243,11 +290,6 @@ form [name='name'], [name='email'] {
 .container-privacidad {
     display: flex;
 }
-
-/* .container-privacidad>*{
-    display: flex;
-    border: 1px solid red;
-} */
 
 /* stile del check -------------------------*/
 
@@ -394,6 +436,7 @@ form [name='name'], [name='email'] {
     background-color: rgba(0, 0, 0, 0.8);
     flex-direction: column;
     min-height: 100vh;
+    width: 100vw;
     position: fixed;
     display: flex;
     visibility: visible;
