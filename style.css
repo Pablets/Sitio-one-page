@@ -1,3 +1,68 @@
+/* Youtube player ---------------- */
+
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.23%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+}
+
+.youtube-player iframe,
+.youtube-player object,
+.youtube-player embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+
+.youtube-player img:hover {
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+    cursor: pointer;
+}
+/* Alternativa 2 de player responsive youtube  */
+
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Swiper ------------------------- */
 .swiper-wrapper {
     width: 80vw;
     overflow: visible;
@@ -9,12 +74,12 @@
     /* border: 1px solid red; */
 }
 
-.swiper-slide.swiper-slide-active{
+.swiper-slide.swiper-slide-active {
     opacity: 1;
     transition: all 1s;
 }
 
-.swiper-slide{
+.swiper-slide {
     opacity: 0.7;
     transition: all 1s;
 }
@@ -66,6 +131,7 @@ header {
     justify-content: center;
     background-color: bisque;
     padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 header h1, header h2 {
@@ -92,7 +158,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px 0px 20px 0px;
+
 }
 
 /* Article -------------- */
@@ -291,17 +358,23 @@ form [name='name'], [name='email'] {
 
 #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
     display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
 }
 
 #modal1:target, #modal2:target, #modal3:target, #modal4:target, #modal5:target, #modal6:target {
     background-color: cadetblue;
-    position: fixed;
     top: 0px;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: fixed;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
 }
 
 article.modal {
@@ -351,14 +424,12 @@ article.video-container>iframe {
     box-shadow: 2px 2px 3px #333333;
 }
 
-
-section.fullwidth{
+/* section.fullwidth {
     width: 100%;
-    /* border: black 1px solid; */
-    padding: 20px;
-}
+    padding: 0px 0px 20px 0px;
+} */
 
-section.fullwidth article{
+section.fullwidth article {
     /* padding: 20px; */
     background-color: coral;
 }
