@@ -466,11 +466,12 @@ article.modal div.container {
 }
 
 a.x-button {
+    text-decoration: none;
     position: absolute;
     top: -0.4rem;
     right: -0.4rem;
     padding: 0.5rem;
-    background-color: green;
+    background-color: rgb(214, 39, 39);
     color: white;
     line-height: 1rem;
     font-weight: 700;
