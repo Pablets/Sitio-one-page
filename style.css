@@ -483,6 +483,11 @@ article.modal div.container h2{
     letter-spacing: 0.2rem;
 }
 
+article.modal div.container p{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
 a.x-button {
     text-decoration: none;
     position: absolute;
