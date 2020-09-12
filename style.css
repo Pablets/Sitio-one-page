@@ -439,6 +439,7 @@ form [name='name'], [name='email'] {
     width: 100vw;
     position: fixed;
     display: flex;
+    justify-content: center;
     visibility: visible;
     opacity: 1;
     transition: all 1s;
