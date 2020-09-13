@@ -7,12 +7,17 @@
     overflow: hidden;
     max-width: 100%;
     background: #000;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
-.youtube-player iframe,
-.youtube-player object,
-.youtube-player embed {
+.youtube-player-container {
+    min-width: 300px;
+    width: calc(100vw - 2rem);
+    height: auto;
+    display: block;
+}
+
+.youtube-player iframe, .youtube-player object, .youtube-player embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,15 +61,29 @@
     background: url("/imagenes/TxzC70f.png") no-repeat;
     cursor: pointer;
 }
+
 /* Alternativa 2 de player responsive youtube  */
 
-.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+/* .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+} */
 
-.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
 
 /* Swiper ------------------------- */
+
 .swiper-wrapper {
-    width: 80vw;
+    width: calc(100vw - 4rem);
 }
 
 .swiper-container {
@@ -76,11 +95,11 @@
 
 .swiper-slide.swiper-slide-active {
     opacity: 1;
-    background-color:gainsboro;
+    background-color: gainsboro;
 }
 
 .swiper-slide.swiper-slide-next, .swiper-slide.swiper-slide-prev {
-    background-color:gray;
+    background-color: gray;
     opacity: 0.7;
 }
 
@@ -89,6 +108,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'rubik';
+    text-decoration: none;
 }
 
 body {
@@ -143,7 +163,7 @@ header h1, header h2 {
 }
 
 header h1 {
-    font-family: 'work sans';
+    font-family: 'helvetica neue';
     font-weight: 500;
     font-size: 2.5rem;
     width: 200px;
@@ -159,7 +179,7 @@ header h2 {
     /* text-align: center; */
 }
 
-header a{
+header a {
     font-family: 'work sans';
     font-weight: 500;
     text-align: center;
@@ -168,7 +188,6 @@ header a{
     padding: 0.5rem;
     background-color: #ff8400;
     color: rgb(255, 255, 255);
-
 }
 
 p {
@@ -183,7 +202,6 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 0 0 2rem 0rem;
-
 }
 
 /* Article -------------- */
@@ -191,17 +209,16 @@ section {
 article {
     background-color: gainsboro;
     border-radius: 8px;
-
 }
 
-article>div.miniature-container{
+article>div.miniature-container {
     height: 200px;
     overflow: hidden;
     margin-bottom: 1rem;
     position: relative;
 }
 
-article img.miniature{
+article img.miniature {
     border-radius: 8px;
     display: block;
     width: 100%;
@@ -209,52 +226,53 @@ article img.miniature{
     overflow: hidden;
 }
 
-article.swiper-slide{
+article.swiper-slide {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
 }
 
-article.swiper-slide .container{
+article.swiper-slide .container {
     padding: 0rem 1rem;
-
 }
-article>div.miniature-container>div{
+
+article>div.miniature-container>div {
     position: absolute;
     bottom: 0px;
     color: white;
     margin-left: 1rem;
 }
-article>div.miniature-container h1{
+
+article>div.miniature-container h1 {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
     margin-bottom: 0.2rem;
     text-shadow: 1px 1px 5px black;
 }
-article>div.miniature-container h2{
+
+article>div.miniature-container h2 {
     font-size: 1.2rem;
     font-weight: 400;
     text-shadow: 1px 1px 5px black;
     margin-bottom: 1rem;
 }
 
-article h1, article p, img{
+article h1, article p, img {
     margin-bottom: 0.8rem;
 }
 
-article div.cinta-opciones{
+article div.cinta-opciones {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
 }
 
-article .cinta-opciones button{
+article .cinta-opciones button {
     padding: 0.2rem;
 }
 
-article .cinta-opciones span{
-    color: blue;
+article .cinta-opciones span {
+    color: rgb(63, 63, 63);
     padding: 0px 0 0 1rem;
 }
 
@@ -287,6 +305,7 @@ form [name='name'], [name='email'] {
 
 .check-text a {
     text-decoration: none;
+    color: rgb(21, 21, 107);
 }
 
 .container-privacidad {
@@ -463,18 +482,18 @@ article.modal div.container {
     background-color: gainsboro;
     padding: 20px;
     overflow: auto;
-    height: 75vh;
+    height: 85vh;
     width: 95vw;
 }
 
-article.modal div.container h1{
+article.modal div.container h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0px;
     padding-bottom: 0.3rem;
 }
 
-article.modal div.container h2{
+article.modal div.container h2 {
     text-align: center;
     font-size: 1rem;
     font-variant: normal;
@@ -483,7 +502,7 @@ article.modal div.container h2{
     letter-spacing: 0.2rem;
 }
 
-article.modal div.container p{
+article.modal div.container p {
     font-size: 1.1rem;
     line-height: 1.4rem;
 }
@@ -505,6 +524,11 @@ article.modal img {
     max-width: calc(100vw - 60px);
 }
 
-article.transparent-card{
+article.transparent-card {
     background-color: transparent;
 }
+
+.margin-1rem {
+    margin: 0rem 1rem;
+}
+
