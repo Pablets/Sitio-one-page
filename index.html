@@ -45,7 +45,7 @@
     <main>
         <section>
             <article class="modal" id="modal1">
-                <div class="x-container"><a class="x-button" href="#">X</a>
+                <div class="x-container"><a class="x-button material-icons" href="#">cancel</a>
                     <div class="container">
                         <img src="/imagenes/JM-Courmayeurmobile.jpg" alt="" srcset="">
                         <h1>Título de slide 1</h1>
@@ -238,12 +238,13 @@
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit loremlor.</p>
                                 <div class="cinta-opciones">
                                     <div>
-                                        <button disabled="disabled">Hola</button>
-                                        <button disabled="disabled">Hola</button>
+                                        <!-- <button disabled="disabled">Hola</button> -->
+                                        <!-- <button disabled="disabled">Hola</button> -->
+                                        <a href="#modal1"><span class="material-icons">add_circle</span></a>
+                                        <a href="#modal1"><span class="material-icons">share</span></a>
                                     </div>
                                     <div>
-                                        <a href="#modal1"><span class="material-icons">share</span></a>
-                                        <a href="#modal1"><span class="material-icons">add_circle</span></a>
+                                        <a href="#modal1"><span class="text-button">VER MÁS</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -413,7 +414,7 @@
         centeredSlides: true,
         spaceBetween: 12,
         loop: true,
-        initialSlide: 1,
+        initialSlide: 0,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

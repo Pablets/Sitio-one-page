@@ -273,7 +273,13 @@ article .cinta-opciones button {
 
 article .cinta-opciones span {
     color: rgb(63, 63, 63);
-    padding: 0px 0 0 1rem;
+    padding: 0px 0.7rem 0 0rem;
+}
+
+article .cinta-opciones span.text-button{
+    font-family: helvetica;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
 }
 
 footer {
@@ -510,13 +516,15 @@ article.modal div.container p {
 a.x-button {
     text-decoration: none;
     position: absolute;
-    top: -0.4rem;
-    right: -0.4rem;
-    padding: 0.5rem;
-    background-color: rgb(214, 39, 39);
-    color: white;
-    line-height: 1rem;
+    top: -0.5rem;
+    right: -0.5rem;
+    /* padding: 0.5rem; */
+    background-color:#dcdcdc;
+    color: black;
+    /* line-height: 1rem; */
+    font-size: 2rem;
     font-weight: 700;
+    border-radius: 50%;
 }
 
 article.modal img {
