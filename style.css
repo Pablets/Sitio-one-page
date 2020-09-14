@@ -109,6 +109,8 @@
     box-sizing: border-box;
     font-family: 'rubik';
     text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -535,7 +537,7 @@ article.transparent-card {
     background-color: transparent;
 }
 
-.margin-1rem {
+.margin-1-5rem {
     margin: 0rem 1.25rem;
 }
 
