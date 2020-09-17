@@ -21,7 +21,7 @@
  var iframe = document.createElement("iframe");
  var embed = "https://www.youtube.com/embed/ID?autoplay=1";
  iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
- iframe.setAttribute("frameborder", "0");
+ iframe.setAttribute("frameborder", "0"); //TODO issue #4 creating an issue https://github.com/Pablets/Sitio-one-page/issues/4
  iframe.setAttribute("showinfo", "0");
  iframe.setAttribute("allowfullscreen", "1");
  this.parentNode.replaceChild(iframe, this);
