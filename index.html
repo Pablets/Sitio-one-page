@@ -21,7 +21,6 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="material.css">
-    <link rel="stylesheet" href="/tipografia.css">
 </head>
 
 <body>
@@ -30,9 +29,14 @@
 
     </div>
 
-    <nav>
+    <nav id="menu">
         <img src="/imagenes/logo.svg" alt="">
-        <ul>
+        <ul id="hamb">
+            <li><a href="#menu">Abrir</a></li>
+            <li><a href="#">Cerrar</a></li>
+        </ul>
+
+        <ul id="btn">
             <li><a href="#">Link1</a></li>
             <li><a href="#">Link2</a></li>
             <li><a href="#">Link3</a></li>
@@ -40,16 +44,8 @@
         </ul>
     </nav>
     <header>
-        <h1 class="mdc-typography--headline1">TREKKING TEAM</h1>
-        <h2 class="mdc-typography--headline2">Acá va un subtitulo</h2>
-        <!-- <h3 class="mdc-typography--headline3">Acá va un h3</h3>
-        <h4 class="mdc-typography--headline4">Acá va un h4</h4>
-        <h5 class="mdc-typography--headline5">Acá va un h5</h5>
-        <h6 class="mdc-typography--headline6">Acá va un h6</h6>
-        <h6 class="mdc-typography--subtitle1">Acá va un Sub1</h6>
-        <h6 class="mdc-typography--subtitle2">Acá va un Sub2</h6>
-        <h6 class="mdc-typography--headline6">Acá va un Sub3</h6> -->
-        <!-- <a href="#modal1"><span class="text-button">Button text</span></a> -->
+        <h1>TREKKING TEAM</h1>
+        <h2>Acá va un subtitulo</h2>
         <span><a class="mdc-button mdc-button--raised mdc-ripple-upgraded" href="#">Ver más</a></span>
     </header>
     <main>
@@ -501,9 +497,10 @@
         </form>
         <span>Copyright</span>
     </footer>
+    <script src="index.js"></script>
     <script src="responsivevideoplayer.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {

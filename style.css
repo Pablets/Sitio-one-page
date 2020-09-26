@@ -15,8 +15,8 @@
     height: auto;
     display: block;
     margin-bottom: 2rem;
-    -moz-box-shadow: 0px 89px 155px -65px rgba(0,0,0,0.75);
-    box-shadow: 0px 30px 60px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 89px 155px -65px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 30px 60px -20px rgba(0, 0, 0, 0.75);
 }
 
 .youtube-player iframe, .youtube-player object, .youtube-player embed {
@@ -47,7 +47,7 @@
     transition: .4s all;
 }
 
-.youtube-player img{
+.youtube-player img {
     filter: brightness(90%);
     -webkit-filter: brightness(90%);
 }
@@ -72,8 +72,8 @@
 
 /* Swiper ------------------------- */
 
-:root{
---swiper-theme-color: #2e2e2f;
+:root {
+    --swiper-theme-color: #2e2e2f;
 }
 
 .swiper-wrapper {
@@ -98,7 +98,8 @@
 }
 
 /* pagination bullets  */
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 5px;
     color: #3f3f3f;
 }
@@ -111,75 +112,143 @@
     text-decoration: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
 }
 
 body {
     background-color: whitesmoke;
 }
 
-nav {
+/* Jerarquía de textos */
+
+
+h1 {
+    font-family: 'helvetica neue';
+    font-size: 3.375em;
+    line-height: 1.16666667em;
+    margin-top: 0.38888889em;
+    margin-bottom: 0.38888889em;
+}
+
+h2 {
+    font-family: 'work sans';
+    margin-bottom: 1.5rem;
+    font-size: 2.25em;
+    line-height: 1.16666667em;
+    margin-top: 0.58333333em;
+    margin-bottom: 0.58333333em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.75em;
+    margin-top: 0.875em;
+    margin-bottom: 0em;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 1.3125em;
+    margin-top: 1.3125em;
+    margin-bottom: 0em;
+}
+
+h5 {
+    font-size: 1em;
+    line-height: 1.3125em;
+    margin-top: 1.3125em;
+    margin-bottom: 0em;
+}
+
+p, ul, ol, pre, table, blockquote {
+    margin-top: 0em;
+    margin-bottom: 2.625em;
+}
+
+/* Navegación ---------------*/
+
+nav#menu {
     background-color: rgb(17, 17, 17);
-    position: fixed;
-    bottom: 0px;
-    z-index: 90;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px;
+    text-align: center;
+    position: fixed;
+    height: 3em;
+    z-index: 800;
+    transition: all .5s;
+}
+
+nav ul{
+    margin: 0px;
+    list-style: none;
 }
 
 nav img {
+    margin: .5em;
+    height: 2em;
+}
+
+nav #btn {
+    display: none;
+}
+
+ul#hamb{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+ul#hamb li{
+    width: 4em;
+}
+
+ul#hamb li a{
+    background-color: cadetblue;
     display: block;
-    height: 1.5rem;
+    line-height: 3em;
+    margin: 0px;
 }
 
-nav ul li {
-    display: inline-block;
+ul#hamb li:last-child{
+    display: none;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 0.5rem;
-    text-decoration: none;
+nav#menu:target ul#hamb li:first-child{
+    display: none;
+}
+nav#menu:target ul#hamb li:last-child{
+    display: block;
+}
+
+nav#menu:target #btn{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    display: block;
+    height: calc(100vh - 3em);
+    position: absolute;
+    top: 3em;
+}
+
+#btn li a{
+    display: block;
+    background-color: darkcyan;
+    margin: 1em auto;
+    width: 80%;
+    padding: .5em 0;
     color: white;
-    font-weight: 600;
 }
+
 
 header {
-    height: 100vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* aca va el banner!! ------------------------------------------------------ */
     background-image: url(/imagenes/hermomobile4.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: cover;
-    padding: 2rem 20px;
-    margin-bottom: 2rem;
+    padding: 3em 20px;
 }
 
 header h1, header h2 {
     text-align: left;
     margin-bottom: 0.5rem;
-}
-
-header h1 {
-    font-family: 'helvetica neue';
-    font-weight: 500;
-    font-size: 2.5rem;
-    width: 200px;
-    /* text-align: center; */
-}
-
-header h2 {
-    font-family: 'work sans';
-    font-weight: 300;
-    width: 200px;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    /* text-align: center; */
 }
 
 header a {
@@ -279,7 +348,7 @@ article .cinta-opciones span {
     padding: 0px 0.7rem 0 0rem;
 }
 
-article .cinta-opciones span.text-button{
+article .cinta-opciones span.text-button {
     font-weight: 500;
     letter-spacing: 0.15rem;
 }
@@ -521,7 +590,7 @@ a.x-button {
     top: -0.5rem;
     right: -0.5rem;
     /* padding: 0.5rem; */
-    background-color:#dcdcdc;
+    background-color: #dcdcdc;
     color: black;
     /* line-height: 1rem; */
     font-size: 2rem;
