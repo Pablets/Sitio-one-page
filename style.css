@@ -186,9 +186,7 @@ nav img {
     height: 2em;
 }
 
-nav #btn {
-    display: none;
-}
+
 
 ul#hamb{
     position: absolute;
@@ -197,42 +195,51 @@ ul#hamb{
 }
 
 ul#hamb li{
-    width: 4em;
+    width: 3em;
+    margin-left: .8em;
 }
 
 ul#hamb li a{
-    background-color: cadetblue;
-    display: block;
-    line-height: 3em;
     margin: 0px;
 }
 
-ul#hamb li:last-child{
+ul#hamb li a span{
+    display: block;
+    font-size: 3em;
+    color: white;
+}
+
+ul#hamb li:last-child span{
     display: none;
 }
 
-nav#menu:target ul#hamb li:first-child{
+nav#menu:target ul#hamb li:first-child span{
     display: none;
 }
-nav#menu:target ul#hamb li:last-child{
+nav#menu:target ul#hamb li:last-child span{
     display: block;
+}
+
+nav#menu #btn {
+    position: absolute;
+    top: 3em;
+    left: -100vw;
+    background: rgb(179, 179, 179);
+    width: 80vw;
+    height: calc(100vh - 3em);
 }
 
 nav#menu:target #btn{
-    background: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    display: block;
-    height: calc(100vh - 3em);
-    position: absolute;
-    top: 3em;
+    left: 0;
+    transition: all 0.5s;
 }
 
 #btn li a{
     display: block;
     background-color: darkcyan;
-    margin: 1em auto;
-    width: 80%;
-    padding: .5em 0;
+    margin: 1.5em auto;
+    width: 70%;
+    padding: .8em 0;
     color: white;
 }
 
