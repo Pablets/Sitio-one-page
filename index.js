@@ -13,7 +13,9 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("menu").style.top = "0";
   } else {
-    document.getElementById("menu").style.top = "-50px";
+    // setTimeout(function(){}, 10000);
+      document.getElementById("menu").style.top = "-50px";
+
   }
   prevScrollpos = currentScrollPos;
 };
