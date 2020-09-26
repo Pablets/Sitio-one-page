@@ -15,11 +15,13 @@ window.onscroll = function () {
   let element = document.getElementById('btn');
   let elementStyle = window.getComputedStyle(element);
   let elementLeft = elementStyle.getPropertyValue('left');
+  if (elementLeft == '0px') {
+    return;
+  }
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("menu").style.top = "0";
-  } else if (elementLeft != 0) {
-      setTimeout(function () { document.getElementById("menu").style.top = "-50px"; }, 5000);
-  }else{
+  } else {
+    // setTimeout(function () { document.getElementById("menu").style.top = "-50px"; }, 5000);
     document.getElementById("menu").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;

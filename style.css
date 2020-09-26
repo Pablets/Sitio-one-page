@@ -250,7 +250,7 @@ header {
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: cover;
-    padding: 3em 20px;
+    padding: 3em 1.2em 4em 1.2em;
 }
 
 header h1, header h2 {
@@ -280,7 +280,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 2rem 0rem;
+    padding: 4rem 0 4rem 0rem;
 }
 
 /* Article -------------- */
@@ -360,10 +360,20 @@ article .cinta-opciones span.text-button {
     letter-spacing: 0.15rem;
 }
 
+main :nth-child(3) h3{
+    width: calc(100vw - 2.5rem);
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+
 footer {
     background-color: gray;
     padding: 10px;
 }
+
+
+/* Formulario ---------------- */
 
 form {
     display: flex;
